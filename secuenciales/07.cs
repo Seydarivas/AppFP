@@ -15,6 +15,17 @@ namespace AppFP.secuenciales
         public _07()
         {
             InitializeComponent();
+            private void btnCalcular_Click(object sender, EventArgs e)
+{
+           double b = double.Parse(txtBase.Text);
+           double h = double.Parse(txtAltura.Text);
+
+                 double area = b * h;
+                 double perimetro = 2 * (b + h);
+
+           txtArea.Text = area.ToString("00.00") + "  u2";
+           txtPerimetro.Text = perimetro.ToString("00.00") + "  u";
+
         }
     }
 }
