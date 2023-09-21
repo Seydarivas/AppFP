@@ -19,14 +19,14 @@ namespace AppFP.secuenciales
 
         private void _06_Load(object sender, EventArgs e)
         {
-           double b = double.Parse(txtBase.Text);
+           double r = double.Parse(txtRadio.Text);
            double h = double.Parse(txtAltura.Text);
 
-                double area = b * h;
-                double perimetro = 2 * (b + h);
+             double area = 2 * 3.14 * r * ( r + h );
+             double volumen = 3.14 * Math.Pow(r, 2) * h;
 
-     txtArea.Text = area.ToString("00.00") + "  u2";
-     txtPerimetro.Text = perimetro.ToString("00.00") + "  u";
+    txtArea.Text = area.ToString("00.00") + "  u2";
+    txtVolumen.Text = volumen.ToString("00.00") + "  u3";
         }
     }
 }
